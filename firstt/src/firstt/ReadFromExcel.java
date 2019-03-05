@@ -42,8 +42,8 @@ public class ReadFromExcel
 			
 			Workbook wb=WorkbookFactory.create(fis);
 			Sheet sh = wb.getSheet(sheet);
-			int rowno=0;
-			int colno=0;
+			int rowno=-1;
+			int colno=-1;
 			
 			for(int i=0;i<sh.getLastRowNum();i++)
 			{
