@@ -1,9 +1,6 @@
 package urbanLadder;
 
 import java.io.FileInputStream;
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -19,7 +16,7 @@ public class DataProviderCheck
 	@DataProvider
 	public static Object[][] actual()
 	{
-		Object[][] arr=new Object[11][2];
+		Object[][] arr=new Object[10][2];
 		try
 		{			
 			FileInputStream fis=new FileInputStream("C:\\Users\\AmishOm\\git\\demo1.1\\firstt\\Excel\\UrbanLadder0603.xlsx");			
@@ -31,8 +28,8 @@ public class DataProviderCheck
 				
 				for(int j=0;j<sh.getRow(i).getLastCellNum();j++)
 				{				
-					arr[i][j] = sh.getRow(i).getCell(j).toString();	
-					System.out.println(arr[i][j]);
+					arr[i-1][j] = sh.getRow(i).getCell(j).toString();	
+					//System.out.println(arr[i][j]);
 				}
 			}		
 		}
