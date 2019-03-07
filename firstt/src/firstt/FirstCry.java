@@ -29,9 +29,14 @@ public class FirstCry
 	{
 		
 		List<WebElement> categories = driver.findElements(By.xpath("//ul/li[@class='double']/a"));
-		for(int i=categories.size();i>=0;i--)
+		for(int i=0;i<categories.size();i++)
 		{
-			System.out.println(categories.get(i).getText());
+			System.out.print(categories.get(i).getText());
+			List<WebElement> subCategories = driver.findElements(By.xpath("//ul/li[@class='double']/a/parent::li/parent::ul/parent::div/parent::div/following-sibling::div/descendant::div[@class='option-container submenu1-1']/ul/li/a"));
+			for(int j=0;j<subCategories.size();j++)
+			{
+				System.out.print(subCategories.get(j).getText());
+			}
 		}
 		
 	}

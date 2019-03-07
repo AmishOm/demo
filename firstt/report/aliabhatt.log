@@ -1,0 +1,9 @@
+2019-03-07 12:19:11,017 - Fouth -INFO - hello world
+2019-03-07 12:19:11,022 - Fouth -WARN - warning
+2019-03-07 12:19:11,022 - Fouth -ERROR - erroring
+2019-03-07 12:50:30,593 - Fouth -INFO - hello world
+2019-03-07 12:50:30,608 - Fouth -WARN - warning
+2019-03-07 12:50:30,608 - Fouth -ERROR - erroring
+2019-03-07 12:50:44,635 - Fouth -INFO - hello world
+2019-03-07 12:50:44,650 - Fouth -WARN - warning
+2019-03-07 12:50:44,650 - Fouth -ERROR - erroring
